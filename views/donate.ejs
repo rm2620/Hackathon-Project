@@ -1,0 +1,57 @@
+<%- include("partials/header") -%>
+
+<div class="top-section">
+<div class="top-section1">
+ <img id="top-image" src="Media/no-kid-hungry.jpg" alt="top-image">
+</div>
+ <div class="top-section2">
+   <h3 align="center"><b>  HELP HUNGRY STUDENTS!</b></h3>
+    <h3 align="center"><b>Hunger is the world’s most solvable problem. It’s up to you</b></h3>
+</div>
+</div>
+
+<h3>Please use the form below to make a contribution in an amount that is meaningful to you.</h3>
+<div class="donation-container">
+
+            <div class="donation-box">
+	            <div class="title">Donation Information</div>
+
+	            <div class="fields">
+		            <input type="text" id="firstName" placeholder="First Name"> </input>
+		            <input type="text" id="lastName" placeholder="Last Name"> </input>
+		            <input type="text" id="email" placeholder="Email"> </input>
+	            </div>
+
+	            <div class="amount">
+		            <div class="button">$30</div>
+		            <div class="button">$50</div>
+		            <div class="button">$100</div>
+		            <div class="button">$<input type="text" class="set-amount" placeholder="Amount"> </input></div>
+	            </div>
+
+	        <div class="switch">
+					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
+					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
+					<span class="switch-selection"></span>
+			    </div>
+			    <div class="checkboxes">
+					<input type="checkbox" id="receipt" class="checkbox" />
+					<label for="receipt">Email Me A Receipt</label>
+				  <br>
+          <input type="checkbox" id="send" class="checkbox" />
+					<label for="send">Send Anonymously</label>
+          <br>
+					<input type="checkbox" id="list" class="checkbox" />
+					<label for="list">Add Me To Email List</label>
+			    </div>
+
+			    <div class="confirm">
+
+			    </div>
+
+	            <div class="donate-button"><i class="f f-credit-card"></i> Donate Now</div>
+            </div>
+
+        </div>

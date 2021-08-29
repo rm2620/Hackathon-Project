@@ -1,0 +1,22 @@
+
+
+<%- include("partials/header"); -%>
+
+    <h1>Blogs/News</h1>
+
+    <h4>An online journal or informational web page displaying information and updates regarding food insecurity and its effects. There is an option to share experience and views related to this issue in the compose section.</h4>
+
+    <br>
+
+  <%  posts.forEach(function(post){ %>
+
+    <h1><%=post.title%></h1>
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p>
+
+    <% }) %>
+    <form action="/blogs" method="post">
+      <button type="submit" name="button" class="compose">compose</button>
+    </form>
